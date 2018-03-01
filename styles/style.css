@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Muli', sans-serif;
+  background-color: #f1f2f6;
+}
+
+/* single sections usually per nav link */
+.single-section {
+  width: 100%;
+  height: 100vh;
+
+}
+
+#header {
+  padding-top: 20px;
+}
+
+/* main site title */
+#header-title {
+  font-size: 50px;
+  margin-left: 80px
+
+}
+
+/* navigation bar */
+#nav {
+  margin-left: 70%;
+  cursor: pointer;
+  font-size: 20px;
+  display: inline;
+}
+
+.nav {
+  margin-left: 5px;
+  display: inline;
+}
+
+/* mouseover effects */
+.nav:hover {
+  color: #bdc3c7;
+  transition: 0.3s linear;
+}
+
+
+/* splash */
+#splash-background {
+  width: 100%;
+  height: 89vh;
+  background-image: url('../images/office_background.jpg');
+}
