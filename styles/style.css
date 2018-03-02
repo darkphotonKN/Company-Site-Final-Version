@@ -4,11 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html {
   font-family: 'Muli', sans-serif;
-  background-color: #f1f2f6;
+  background-color: #f5f6fa;
 }
 
 /* single sections usually per nav link */
@@ -18,6 +19,9 @@ html {
 
 }
 
+
+/* HEADER */
+
 #header {
   padding-top: 20px;
 }
@@ -25,9 +29,11 @@ html {
 /* main site title */
 #header-title {
   font-size: 35px;
+  color: #353b48;
   margin-left: 80px;
   font-weight: bold;
 }
+
 
 /* NAVIGATION */
 
@@ -54,7 +60,7 @@ html {
 /* home button */
 .nav-home {
   display: inline;
-  color: #2e86de;
+  color: #40739e;
 }
 
 #nav-home {
@@ -63,7 +69,7 @@ html {
 
 /* mouseover effects */
 .nav:hover {
-  color: #0abde3;
+  color: #487eb0;
   transition: 0.2s linear;
 }
 
@@ -73,9 +79,44 @@ html {
 
 }
 
+/* class added for header to be fixed when user scrolls down page */
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+
 /* splash */
 #splash-background {
   width: 100%;
   height: 90.5vh;
   background-image: url('../images/office_background.jpg');
+}
+
+
+/* ABOUT */
+
+#about {
+  background-color: #ced6e0;
+}
+
+
+
+
+
+/* CONTACT */
+
+#contact {
+  height: 200px;
+  width: 100%;
+
+  background-color: #2f3542;
+
+
+  font-size: 25px;
+  color: #ced6e0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
