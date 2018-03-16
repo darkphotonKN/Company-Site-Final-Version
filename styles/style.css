@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 * {
   margin: 0;
@@ -27,14 +28,15 @@ html {
 #header {
   padding-top: 20px;
   transition-delay: 0.3s linear;
-  height: 100px;
+  height: 100px; /* keeps the header / nav space while scrolling */
+  background-color: #d2dae2;
 }
 
 /* main site title */
 #header-title {
-  font-size: 35px;
+  font-size: 30px;
   color: #353b48;
-  margin-left: 80px;
+  margin-left: 220px;
   font-weight: bold;
 }
 
@@ -44,15 +46,16 @@ html {
 
 /* navigation bar */
 #nav {
-  margin-left: 70%;
+  margin-left: 60%;
   cursor: pointer;
   font-size: 19px;
   font-weight: bold;
+
   display: inline;
 }
 
 .nav {
-  margin-left: 6px;
+  margin-left: 22px;
   display: inline;
 
 }
@@ -65,7 +68,7 @@ html {
 /* home button */
 .nav-home {
   display: inline;
-  color: #40739e;
+  color: #0a3d62;
 }
 
 #nav-home {
@@ -80,35 +83,48 @@ html {
 
 #nav:hover {
 
-
-
 }
 
 /* class added for header to be fixed when user scrolls down page */
-.fixed {
+.head-nav {
   position: fixed;
   width: 100%;
-  height: 100px;
-  background-color: #f5f6fa;
+  height: 75px;
+  background-color: #aaa69d;
   top: 0;
-  padding-top: 20px;  
+  transition: 0.3s linear;
 }
 
+
+/* HOME */
 
 /* splash */
 #splash-background {
   width: 100%;
   height: 90.5vh;
   background-image: url('../images/office_background.jpg');
+
 }
 
+#splash-background p {
+  padding-top: 20%;
+  padding-left: 20%;
+  font-size: 33px;
+  font-style: italic;
+  color: #d2dae2;
+  font-family: 'Raleway', sans-serif;
+}
 
 /* ABOUT */
 
 #about {
-  background-color: #ced6e0;
+  background-color: #d2dae2;
+
 }
 
+.about p {
+
+}
 
 
 
@@ -122,10 +138,35 @@ html {
   background-color: #2f3542;
 
 
-  font-size: 25px;
-  color: #ced6e0;
+  font-size: 20px;
+  color: #d2dae2;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+/* CATALOG ITEMS */
+
+#catalog-items {
+  background-color: #2f3542;
+}
+
+/* OTHER */
+
+.text-content {
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+  margin-top: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: inherit;
 }
