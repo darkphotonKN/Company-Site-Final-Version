@@ -89,9 +89,13 @@ html {
 }
 
 /* class added when screen is too narrow (or mobile / tablet mode )*/
-.mobileNav {
-  font-size: 25px;
+.mobileNavStyle {
+  font-size: 12px;
 
+}
+
+.mobileNavLayout {
+  margin-left: 10%;
 }
 
 

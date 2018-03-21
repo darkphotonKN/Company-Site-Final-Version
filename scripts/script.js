@@ -32,7 +32,7 @@ $(document).ready(function() {
   });
 
 
-  /* mobile nav alterations */
+  /* responsive mobile nav */
   var $window = $(window);
   var mobWidthThres = '1180'; // threshold where page size becmomes small enough to trigger nav
 
@@ -41,9 +41,13 @@ $(document).ready(function() {
 
     if(windowSize < mobWidthThres) {
       console.log('Mobile Mode'); // test
-      $('.mynav').addClass('mobileNav');
+      $('.mynav').addClass('mobileNavStyle');
+      $('#nav-home').addClass('mobileNavStyle');
+      $('#mynav').css('marginLeft', '20%');
     } else if(windowSize > mobWidthThres) {
-      
+      $('.mynav').removeClass('mobileNavStyle');
+      $('#nav-home').removeClass('mobileNavStyle');
+      $('#mynav').css('marginLeft', '60%');
     }
 
 
@@ -52,7 +56,6 @@ $(document).ready(function() {
   navAdapt();
   // bind this function to an event listener to check for any resizes of the page
   $window.resize(navAdapt);
-
 
 
 
