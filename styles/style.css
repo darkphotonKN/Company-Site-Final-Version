@@ -18,6 +18,8 @@ html {
   width: 100%;
   height: 100vh;
 
+
+
 }
 
 #temp {
@@ -25,17 +27,23 @@ html {
 
 /* HEADER */
 
+/* entire header including title & nav */
 #header {
-  padding-top: 20px;
-  transition-delay: 0.3s linear;
+  font-family: 'Muli', sans-serif;
+  padding-top: 15px;
+
+  transition-delay: 0.5s linear;
   height: 100px; /* keeps the header / nav space while scrolling */
   background-color: #d2dae2;
+  border: 2px solid #bdc3c7;
+
 }
+
 
 /* main site title */
 #header-title {
-  font-size: 30px;
-  color: #353b48;
+  font-size: 27px;
+  color: #227093;
   margin-left: 220px;
   font-weight: bold;
 }
@@ -45,24 +53,23 @@ html {
 /* NAVIGATION */
 
 /* navigation bar */
-#nav {
+#mynav {
   margin-left: 60%;
   cursor: pointer;
   font-size: 19px;
   font-weight: bold;
-
   display: inline;
 }
 
-.nav {
+.mynav {
   margin-left: 22px;
   display: inline;
 
 }
 
-.nav:before {
-  content:'\00B7';
-  padding-right:5px;
+.mynav:before {
+  content: '\00B7';
+  padding-right: 5px;
 }
 
 /* home button */
@@ -76,23 +83,34 @@ html {
 }
 
 /* mouseover effects */
-.nav:hover {
-  color: #487eb0;
+.mynav:hover {
+  color: #227093;
   transition: 0.2s linear;
 }
 
-#nav:hover {
+/* class added when screen is too narrow (or mobile / tablet mode )*/
+.mobileNav {
+  font-size: 25px;
 
 }
+
 
 /* class added for header to be fixed when user scrolls down page */
 .head-nav {
   position: fixed;
   width: 100%;
   height: 75px;
-  background-color: #aaa69d;
+  background-color: #7f8fa6;
   top: 0;
   transition: 0.3s linear;
+  margin-bottom: 4px;
+  -webkit-box-shadow: 3px 0 12px 3px #5a5a5a;
+  -moz-box-shadow: 3px 0 12px 3px #5a5a5a;
+  box-shadow: 3px 0 12px 3px #5a5a5a;
+}
+
+.head-nav .mynav:hover {
+  color: white;
 }
 
 
@@ -119,6 +137,7 @@ html {
 
 #about {
   background-color: #d2dae2;
+  font-family: 'Muli', sans-serif;
 
 }
 
@@ -165,7 +184,7 @@ html {
 
 }
 
-a {
+#mynav a {
     text-decoration: inherit;
     color: inherit;
     cursor: inherit;

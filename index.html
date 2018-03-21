@@ -1,37 +1,52 @@
-<!-- Primary Site for Evershine Impex Ltd. Version: 0.3 -->
+<!-- Primary Site for Evershine Impex Ltd. Version: 0.4 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Evershine Impex Ltd.</title>
     <script src='jquery-3.3.1.min.js'></script>
+    <link href="styles/style.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
 
 
   <!-- Title and Navigation -->
-  <div class="single-section">
+  <div class="single-section" id="pageBackground">
     <!-- header -->
     <div id="header">
-      <div id="head-nav"> <!-- group heading and nav together -->
+      <!-- group heading and nav together -->
+      <div id="head-nav">
         <div id="temp"> </div>
         <!-- main title -->
-        <div id="header-title">Mohans Evershine Impex Ltd.</div>
+        <div id="header-title">Mohan and Son's Evershine Impex Ltd.</div>
         <!-- navigation -->
-        <div id="nav">
+        <div id="mynav">
           <div class="nav-home" id="nav-home"><a href="#header">Home</a></div>
-          <div class="nav"><a href="#about">About</a></div>
-          <div class="nav"><a href="#catalog-items">Catalog Items</a></div>
-          <div class="nav">Contact</div>
+          <div class="mynav"><a href="#about">About</a></div>
+          <div class="mynav"><a href="#catalog-items">Catalog Items</a></div>
+          <div class="mynav">Contact</div>
         </div>
       </div>
     </div>
-  <!-- Home / Splash Page -->
-    <div id="splash-background">
 
-      <p> Items of your dreams come true here </p>
-    </div>
+  <!-- Home / Splash Page -->
+  <div id="splash-background">
+
+    <p>Dreams come true here </p>
+  </div>
 
 
   </div>
@@ -45,6 +60,27 @@
     <div class="text-content">
       <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor commodo nisi, quis suscipit lectus pharetra vitae. In hac habitasse platea dictumst. Nam vehicula id dolor et semper. In porttitor leo consectetur, luctus risus sed, egestas velit. Aliquam eget velit porttitor est congue porttitor eget ac nisl. Aenean a pulvinar turpis. Integer lectus lorem, commodo ac viverra at, luctus ac dolor. Phasellus scelerisque, nunc consequat fringilla venenatis, lectus velit lacinia erat, semper rhoncus mauris orci quis urna.</p>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Column 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Column 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
@@ -52,7 +88,6 @@
   <div class="single-section" id="catalog-items">
 
   </div>
-
 
 
   <script type="text/javascript" src="scripts/script.js"></script>

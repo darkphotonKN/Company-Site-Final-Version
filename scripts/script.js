@@ -19,32 +19,51 @@ $(document).ready(function() {
       $('#head-nav').addClass('head-nav');
       $('#header-title').css('fontSize', '28px');
       $('#header-title').css('marginTop', '15px');
-      $('#header-title').css('marginBottom', '-10px');
+      $('#header-title').css('marginBottom', '-20px');
+      $('#header-title').css('color', 'white');
+      //$('.nav').css('color', 'white'); // <- { PROBLEM HERE }
     } else {
       $('#head-nav').removeClass('head-nav');
-      $('#header-title').css('fontSize', '31px');
+      $('#header-title').css('fontSize', '27px');
       $('#header-title').css('marginTop', '0px');
       $('#header-title').css('marginBottom', '0px');
+      $('#header-title').css('color', '#227093');
     }
   });
 
 
   /* mobile nav alterations */
-  if(document.body.offsetWidth < 1200) {
-    console.log('Mobile Mode');
+  var $window = $(window);
+  var mobWidthThres = '1180'; // threshold where page size becmomes small enough to trigger nav
+
+  function navAdapt() {
+    var windowSize = $window.width();
+
+    if(windowSize < mobWidthThres) {
+      console.log('Mobile Mode'); // test
+      $('.mynav').addClass('mobileNav');
+    } else if(windowSize > mobWidthThres) {
+      
+    }
+
 
   }
+  // check the width on launch and resize nav if width is below threshold
+  navAdapt();
+  // bind this function to an event listener to check for any resizes of the page
+  $window.resize(navAdapt);
 
 
 
 
   /* animations */
-  headNav.addEventListener(event, function() {
-    if(event == 'mouseover') {
-      headNav.style.fontSize = '35px';
-    } else {
-      headNav.style.fontSize = '30px';
-    }
+
+
+  /* nav */
+  var navHome = document.getElementById("nav-home");
+  navHome.addEventListener('mouseover', function() {
+    navHome.style.marginRight = '5px';
+
   });
 
 
