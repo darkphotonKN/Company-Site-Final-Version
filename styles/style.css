@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
 
 * {
   margin: 0;
@@ -17,9 +18,6 @@ html {
 .single-section {
   width: 100%;
   height: 100vh;
-
-
-
 }
 
 #temp {
@@ -29,13 +27,13 @@ html {
 
 /* entire header including title & nav */
 #header {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Oxygen', sans-serif;
   padding-top: 15px;
 
   transition-delay: 0.5s linear;
   height: 100px; /* keeps the header / nav space while scrolling */
-  background-color: #d2dae2;
-  border: 2px solid #bdc3c7;
+  background-color: #34ace0;
+  border: 2px solid #00d2d37;
 
 }
 
@@ -91,9 +89,7 @@ html {
 /* class added when screen is too narrow (or mobile / tablet mode )*/
 .mobileNavStyle {
   font-size: 12px;
-
 }
-
 .mobileNavLayout {
   margin-left: 10%;
 }
