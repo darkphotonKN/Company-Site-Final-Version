@@ -24,7 +24,13 @@ $(document).ready(function() {
         $('#header-title').css('color', 'white');
       } else {
         $('#head-nav').removeClass('head-nav');
-        $('#header-title').css('fontSize', '27px');
+      // responsive design - returns to smaller font if in mobile mode
+        var windowSizeCheck = $window.width();
+        if(windowSizeCheck < mobWidthThres) {
+          $('#header-title').css('fontSize', '25px');
+        } else {
+          $('#header-title').css('fontSize', '27px');
+        }
         $('#header-title').css('marginTop', '0px');
         $('#header-title').css('marginBottom', '0px');
         $('#header-title').css('color', '#227093');
@@ -48,11 +54,15 @@ $(document).ready(function() {
       //console.log('Mobile Mode'); // test
       $('.mynav').addClass('mobileNavStyle');
       $('#nav-home').addClass('mobileNavStyle');
-      $('#mynav').css('marginLeft', '20%');
+      $('#mynav').css('marginLeft', '220px');
+      $('#header-title').css('fontSize', '25px'); // reduce header size to compensate for smaller screen and nav below it
+      $('.head-nav').css('fontSize', '23px');
     } else if(windowSize > mobWidthThres) {
       $('.mynav').removeClass('mobileNavStyle');
       $('#nav-home').removeClass('mobileNavStyle');
       $('#mynav').css('marginLeft', '60%'); // sets the original margin back
+      $('#header-title').css('fontSize', '27px'); // sets original header title size back
+      $('.head-nav').css('fontSize', '27px');
     }
 
 
@@ -79,7 +89,7 @@ $(document).ready(function() {
   }
 
 
-  // launch page
+  // INITIATE PAGE JS FUNCTIONS
   init();
 
 
