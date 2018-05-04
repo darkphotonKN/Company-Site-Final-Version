@@ -7,7 +7,7 @@
 
 html {
   font-family: "Muli", sans-serif;
-  background-color: #f5f6fa; }
+  background-color: white; }
 
 /* single sections usually per nav link */
 .single-section {
@@ -18,11 +18,12 @@ html {
 /* HEADER */
 /* entire header including title & nav */
 #header {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Slabo 27px", serif;
   padding-top: 15px;
   transition-delay: 0.5s linear;
   height: 100px;
-  background-color: #f1f2f6;
+  background-color: #a4b0be;
+  border: 3px solid black;
   animation-name: header-anim;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
@@ -33,9 +34,10 @@ html {
     background-color: #747d8c;
     height: 110px; }
   100% {
-    background-color: #f1f2f6; } }
+    background-color: #a4b0be; } }
 /* main site title */
 #header-title {
+  font-family: "Slabo 27px", serif;
   font-size: 27px;
   color: #227093;
   margin-left: 220px;
@@ -99,13 +101,16 @@ html {
 
 @keyframes nav-anim {
   0% {
-    background-color: #f1f2f6; }
+    background-color: #a4b0be;
+    border: 0.5px solid black; }
   50% {
     background-color: #747d8c;
-    height: 85px; }
+    height: 85px;
+    border: 0.5px solid black; }
   100% {
     background-color: #7f8fa6;
-    height: 80px; } }
+    height: 80px;
+    border: 0.5px solid black; } }
 .head-nav .mynav:hover {
   color: white; }
 
@@ -113,8 +118,9 @@ html {
 /* splash */
 #splash-background {
   width: 100%;
-  height: 90.5vh;
-  background-image: url("../images/office_background.jpg"); }
+  height: 85vh;
+  background-image: url("../images/office_background.jpg");
+  background-color: white; }
 
 #splash-background p {
   padding-top: 20%;
@@ -156,6 +162,22 @@ html {
 /* CATALOG ITEMS */
 #catalog-items {
   background-color: #2f3542; }
+
+/* FOOTER */
+#footer {
+  font-weight: bold;
+  word-spacing: 120px;
+  text-align: center;
+  height: calc(15vh - 100px);
+  line-height: calc(15vh - 100px);
+  width: 100%;
+  background-color: #57606f;
+  border: 0.5px solid black;
+  position: fixed; }
+  #footer span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal; }
 
 /* OTHER */
 .text-content {

@@ -1,9 +1,10 @@
 
 $main-title-font: 'Oxygen', sans-serif
+$nav-font: 'Slabo 27px', serif
 
 /* header */
 $header-height: 100px
-$header-original-bg: #f1f2f6
+$header-original-bg: #a4b0be
 $header-scroll-bg: #7f8fa6
 
 *
@@ -15,7 +16,7 @@ $header-scroll-bg: #7f8fa6
 
 html
   font-family: 'Muli', sans-serif
-  background-color: #f5f6fa
+  background-color: white //#f5f6fa
 
 
 /* single sections usually per nav link */
@@ -26,17 +27,17 @@ html
 
 
 
-
 /* HEADER */
 
 /* entire header including title & nav */
 #header
-  font-family: $main-title-font
+  font-family: $nav-font
   padding-top: 15px
 
   transition-delay: 0.5s linear
   height: $header-height /* keeps the header / nav space while scrolling */
   background-color: $header-original-bg
+  border: 3px solid black
 
   animation-name: header-anim
   animation-duration: 600ms
@@ -55,11 +56,11 @@ html
 
 /* main site title */
 #header-title
+  font-family: $nav-font
   font-size: 27px
   color: #227093
   margin-left: 220px
   font-weight: bold
-
 
 
 
@@ -133,12 +134,15 @@ html
 @keyframes nav-anim
   0%
     background-color: $header-original-bg
+    border: 0.5px solid black
   50%
     background-color: #747d8c
     height: $header-height * 0.85
+    border: 0.5px solid black
   100%
     background-color: $header-scroll-bg
     height: $header-height * 0.8
+    border: 0.5px solid black
 
 .head-nav .mynav:hover
   color: white
@@ -150,9 +154,9 @@ html
 /* splash */
 #splash-background
   width: 100%
-  height: 90.5vh
+  height: 85vh
   background-image: url('../images/office_background.jpg')
-
+  background-color: white
 
 
 #splash-background p
@@ -213,6 +217,29 @@ html
 #catalog-items
   background-color: #2f3542
 
+
+
+
+
+/* FOOTER */
+
+#footer
+  font-weight: bold
+
+  word-spacing: 120px
+
+  text-align: center
+  height: calc(15vh - 100px)
+  line-height: calc(15vh - 100px)
+  width: 100%
+  background-color: #57606f
+  border: 0.5px solid black
+  position: fixed
+
+  span
+    display: inline-block
+    vertical-align: middle
+    line-height: normal
 
 /* OTHER */
 
